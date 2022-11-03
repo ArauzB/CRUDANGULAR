@@ -8,20 +8,25 @@ import { AgreeComponent } from './componente/agree/agree.component';
 import { ModificarComponent } from './componente/modificar/modificar.component';
 import{HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { BuscarComponent } from './componente/buscar/buscar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AgreeComponent,
-    ModificarComponent
+    ModificarComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule
 
   ],
   providers: [],

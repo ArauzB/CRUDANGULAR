@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ComunidadesService {
 
-  url = 'http://localhost:8888/comunidad';
+  url = 'https://basedatosapiproyecto.netlify.app/comunidad';
   constructor(private http:HttpClient) { }
 
   getComunidades(){
@@ -14,21 +14,24 @@ export class ComunidadesService {
   }
 
   getComunidad(comunidad:string){
-    return this.http.get(`${this.url}/${comunidad}`);
+    return this.http.get(`${this.url}/id/${comunidad}`);
   }
 
   addComunidad(comunidad:Comunidad){
     return this.http.post(`${this.url}`,comunidad);
   }
 
-  updateComunidad(id:number,comunidad:Comunidad){
+  updateComunidad(id:any,comunidad:Comunidad){
     return this.http.put(`${this.url}/${id}`,comunidad);
   }
 
-  deleteComunidad(id:number){
+  deleteComunidad(id:string){
     return this.http.delete(`${this.url}/${id}`);
   }
 
+  buscarComunidad(comunidad:string){
+    return this.http.get(`${this.url}/${comunidad}`);
+  }
 
 }
 
@@ -37,4 +40,6 @@ export interface Comunidad{
   comunidad?:string;
   coddepto?:string;
   codmuni?:string;
+
 }
+

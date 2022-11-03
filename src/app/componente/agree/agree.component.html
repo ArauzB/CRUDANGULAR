@@ -1,1 +1,51 @@
-<p>agree works!</p>
+<div class="body">
+<div class="container">
+<p>Agregar Comunidad</p>
+
+<form>
+
+
+
+   
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Ingrese Nombre</label>
+      <input [(ngModel)]="comunidad.comunidad"  type="text" class="form-control" name="comunidad" placeholder=" Ejemplo: Lot. Magnolia">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Selecione Departamento</label>
+      <select [(ngModel)]="comunidad.coddepto" class="form-control" name="coddepto">
+        <option value="1" >Guatemala</option>
+        <option>El Progreso</option>
+        <option>Sacatepequez</option>
+        <option>Chimaltenango</option>
+        <option>Escuintla</option>
+        <option>Santa Rosa</option>
+        <option>Solola</option>
+        <option>Totonicapan</option>
+        <option>Quetzaltenango</option>
+        <option>Suchitepequez</option>
+        <option>Retalhuleu</option>
+        <option>San Marcos</option>
+        <option>Huehuetenango</option>
+        <option>Quiche</option>
+        <option>Baja Verapaz</option>
+        <option>Peten</option>
+        <option>Izabal</option>
+        <option>Zacapa</option>
+        <option>Chiquimula</option>
+        <option>Jalapa</option>
+        <option>Jutiapa</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Selecciones Municipio </label>
+        <input [(ngModel)]="comunidad.codmuni" type="text" class="form-control" name="codmuni" placeholder=" Ejemplo: Coatepeque">
+      </div>
+
+      
+        <button (click)="agregarComunidad()" class="button" disabled>Agregar</button>
+      
+
+  </form>
+</div>
+</div>

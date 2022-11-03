@@ -1,0 +1,32 @@
+th{
+    color:white !important;
+  }
+  
+  td{
+    color:white !important;
+  }
+  
+  h1{
+    color:white !important;
+    text-align: center;
+    margin: 20px;
+  
+  }
+  
+  button{
+    margin: 10px;
+  }
+  
+  
+    /* Responsive Styles */
+    @media screen and (max-width: 767px) {
+  
+      .nomostrar{
+        display: none;
+    }
+    
+    }
+  
+    @media screen and (max-width: 575px) {
+   
+    }
