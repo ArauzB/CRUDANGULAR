@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { BuscarComponent } from './componente/buscar/buscar.component';
+import { ExtrasComponent } from './componente/extras/extras.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BuscarComponent } from './componente/buscar/buscar.component';
     HomeComponent,
     AgreeComponent,
     ModificarComponent,
-    BuscarComponent
+    BuscarComponent,
+    ExtrasComponent
   ],
   imports: [
     BrowserModule,

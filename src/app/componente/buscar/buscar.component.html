@@ -15,14 +15,14 @@
       </thead>
       <tbody>
      
-        <tr  *ngFor="let Comunidad of ListarComunidades; let i = index"  >
+        <tr  *ngFor="let Comunidad of ListarComunidades"  >
        
-          <th *ngIf="i < 20" class="nomostrar" scope="row">{{Comunidad.codcomunidad}}</th>
-          <td *ngIf="i < 20" >{{Comunidad.comunidad}}</td>
-          <td *ngIf="i < 20" class="nomostrar">{{Comunidad.coddepto}}</td>
-          <td *ngIf="i < 20"  class="nomostrar">{{Comunidad.codmuni}}</td>
-          <td *ngIf="i < 20" ><button type="button" (click)="updateComunidad(Comunidad.codcomunidad)"  class="">Editar</button></td>
-          <td *ngIf="i < 20" ><button type="button" (click)="eliminarComunidad(Comunidad.codcomunidad)" class="" disabled>Eliminar</button></td>
+          <th  class="nomostrar" scope="row">{{Comunidad.codcomunidad}}</th>
+          <td  >{{Comunidad.comunidad}}</td>
+          <td  class="nomostrar">{{Comunidad.coddepto}}</td>
+          <td   class="nomostrar">{{Comunidad.codmuni}}</td>
+          <td  ><button type="button" (click)="updateComunidad(Comunidad.codcomunidad)"  class="">Editar</button></td>
+          <td  ><button type="button" (click)="eliminarComunidad(Comunidad.codcomunidad)" class="" disabled>Eliminar</button></td>
         </tr>
       </tbody>
     </table>

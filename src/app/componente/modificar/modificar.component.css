@@ -1,12 +1,15 @@
 .container{
 
-    width: 70vw;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: relative;
-    top: 50px;
+  width: 30vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  top: 50px;
 
+}
+h1{
+  color: white;
 }
 
 .body{
@@ -17,4 +20,23 @@
   position: relative;
   top: 50px;
 
+}
+
+label{
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 736px) {
+  .container{
+    width: 90vw;
+  }
+
+}
+@media screen and (max-width: 436px) {
+  .container{
+    width: 70vw;
+  }
+  
 }

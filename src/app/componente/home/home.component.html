@@ -2,8 +2,8 @@
   
 <h1>comunidades</h1>
 <div class="input-group">
-  <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"   [(ngModel)]="comunidad" aria-describedby="search-addon" />
-  <button type="button" class="btn btn-outline-primary" (click)="buscarComunidad(comunidad)">search</button>
+  <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"  (keydown.Enter)="buscarComunidad(comunidad)" [(ngModel)]="comunidad" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary" (click)="buscarComunidad(comunidad)" >search</button>
 </div>
 
 <table class="table table-striped">
