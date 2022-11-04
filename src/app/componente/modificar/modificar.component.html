@@ -39,12 +39,12 @@
       <div class="form-group">
         <label for="exampleFormControlSelect1">Seleccione Municipio</label>
         <select [(ngModel)]="comunidad.codmuni" class="form-control" name="codmuni" id="codmuni">
-          <option *ngFor="let muni of depto;let i = index" value="{{departamento}}{{i}}" >{{muni}}</option>
+          <option *ngFor="let muni of depto;let i = index" value="{{departamento}}-{{i}}" >{{muni}}</option>
         </select>
       </div>
     
           
-            <button (click)="editarComunidad()" disabled class="button" >Guardar</button>
+            <button (click)="editarComunidad()" class="button" >Guardar</button>
           
     
       </form>

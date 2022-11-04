@@ -12,6 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { BuscarComponent } from './componente/buscar/buscar.component';
 import { ExtrasComponent } from './componente/extras/extras.component';
+import { DistritoComponent } from './componente/distrito/distrito.component';
+import { DistritonoComponent } from './componente/distritono/distritono.component';
+import { DepartamentoComponent } from './componente/departamento/departamento.component';
+import { MunicipioComponent } from './componente/municipio/municipio.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ExtrasComponent } from './componente/extras/extras.component';
     AgreeComponent,
     ModificarComponent,
     BuscarComponent,
-    ExtrasComponent
+    ExtrasComponent,
+    DistritoComponent,
+    DistritonoComponent,
+    DepartamentoComponent,
+    MunicipioComponent
   ],
   imports: [
     BrowserModule,

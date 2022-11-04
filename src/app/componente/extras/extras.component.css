@@ -1,8 +1,20 @@
 .body{
     font-family: 'Nunito', sans-serif;
     padding: 50px;
-    min-height: 88vh;
+    min-height: 90vh;
+ 
 
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    position:relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+
+  
   }
 
   
@@ -59,7 +71,7 @@ animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
   }
   
   .card{
-      border-radius: 4px;
+      border-radius: 15px;
       background: #1e282e;
       box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
         transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
@@ -68,10 +80,11 @@ animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
     margin-bottom: 20px;
     padding: auto;
     min-height: 300px;
-    max-width: 30vw;
     max-height: 100%;
     color: #7E74F1;
     min-height: 150px;
+    margin: 0 8px 16px;
+
 
   }
   
@@ -139,12 +152,13 @@ animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
 }
  
   
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 836px) {
   
     .card{
       max-width: 70vw;
       max-height: 100%;
-  padding: none;
+      padding: 14px 6px 18px 6px  ;
+  background-image: none;
    
     }
   }
@@ -154,12 +168,27 @@ animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
         max-height: 100%;
         padding: 14px 6px 18px 6px  ;
         background-image: none;
+        margin: 0 0px 20px;
         }
 
         p{
           font-family: "Courier New";
           font-size: 1.2rem;
         }
+
+
+        
+  .container{
+    display: grid;
+    grid-template-columns: 100% ;
+    position:relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 0 0 0;
+
+
+  
+  }
     }
 
   

@@ -2,55 +2,52 @@
 <div class="body">
 <div class="container">
     
-  <div class="row">
-    <div class="col-md-4" >
+
+
       <div class="card card-1">
         <h3>Distrito = ID</h3>
         <div class="input-group">
-            <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"  (keydown.Enter)="comudepto()"  aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary" (click)="comudepto()" >search</button>
+            <input type="text" class="form-control rounded" placeholder="Ingrese ID del distrito" aria-label="Search"  (keydown.Enter)="getdistrito(distrito)" [(ngModel)]="distrito"  aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary" (click)="getdistrito(distrito)" >search</button>
           </div>
       </div>
-    </div>
 
-    <div class="col-md-4" >
+
+
       <div class="card card-2">
         <h3>Distrito != ID</h3>
         <div class="input-group">
-            <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"  (keydown.Enter)="comudepto()"  aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary" (click)="comudepto()" >search</button>
+            <input type="text" class="form-control rounded" placeholder="Ingrese ID del distrito" aria-label="Search" (keydown.Enter)="getdistritono(distritono)" [(ngModel)]="distritono" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary" (click)="getdistritono(distritono)" >search</button>
           </div>
       </div>
-    </div>
 
 
-    <div class="col-md-4">
+
+
       <div class="card card-3">
         <h3>Comunidades Y Departamentos</h3>
         <div class="input-group">
-            <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"  (keydown.Enter)="comudepto()"  aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary" (click)="comudepto()" >search</button>
+            <input type="text" class="form-control rounded" placeholder="Ingrese ID del departamento" aria-label="Search"  (keydown.Enter)="getdepartamento(departamento)" [(ngModel)]="departamento"  aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary" (click)="getdepartamento(departamento)" >search</button>
           </div>
       </div>
-    </div>
 
-    <div class="col-md-4" >
+
+
         <div class="card card-4">
           <h3>Comunidades Y Distrito</h3>
           <div class="input-group">
-            <input type="text" class="form-control rounded" placeholder="Search" aria-label="Search"  (keydown.Enter)="comudepto()"  aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary" (click)="comudepto()" >search</button>
+            <input type="text" class="form-control rounded" placeholder="Ingrese ID del municipios" aria-label="Search"  (keydown.Enter)="getmunicipio(municipio)" [(ngModel)]="municipio"  aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary" (click)="getmunicipio(municipio)" >search</button>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-4" (click)="setTimeout()" >
-        <div class="card card-5">
-          <h3>Mi Portafolio</h3>
+        <div class="card card-5" (click)="setTimeout()">
+          <h3>Mi portafolio</h3>
           <p>https://arauzb.xyz/</p>
         </div>
-      </div>
+
 
   </div>
-</div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Comunidad, ComunidadesService, departamento, municipio } from '../../services/comunidades.service';
 
 @Component({
   selector: 'app-extras',
@@ -7,28 +8,32 @@ import { Router } from '@angular/router';
   styleUrls: ['./extras.component.css']
 })
 export class ExtrasComponent implements OnInit {
+  distrito?: string; 
+  distritono?: string;
+  departamento?: string;
+  municipio?: string;
 
-  constructor(private route:Router) { }
+  constructor(private router:Router,private ComunidadesService:ComunidadesService) { }
 
   ngOnInit(): void {
   }
-
-  getdistrito(){
-    this.route.navigate(['/home']);
+  
+  getdistrito(id:any){
+    this.router.navigate(['/distrito',id]);
   }
 
-  getnodistrito(){
-    this.route.navigate(['/home']);
+  getdistritono(id:any){
+    this.router.navigate(['/distritono',id]);
   }
 
-  comudepto(){
-    this.route.navigate(['/home']);
+  getdepartamento(id:any){
+    this.router.navigate(['/departamento',id]);
   }
 
-  comumuni(){
-    this.route.navigate(['/home']);
+  getmunicipio(id:any){
+    this.router.navigate(['/municipio',id]);
   }
-
+  
  
 
   setTimeout(){ window.location.assign ("https://arauzb.xyz/") } ;
