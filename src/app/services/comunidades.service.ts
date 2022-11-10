@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ComunidadesService {
 
-  url = 'https://basedatosapiproyecto.netlify.app';
+  url = 'https://basedatosapi.netlify.app';
   constructor(private http:HttpClient) { }
 
   getComunidades(){
